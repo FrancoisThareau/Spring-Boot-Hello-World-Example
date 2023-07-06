@@ -10,13 +10,14 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}	
-	
+	}
+
 	@Test
-        void groupedAssertions() {
-        Personne pers = new Personne("Nassur", "Moumadi");
+	void groupedAssertions() {
+		Personne pers = new Personne("Nassur", "Moumadi");
 
-        assertAll("personne", () -> assertEquals("Nassur", pers.getFirstName()),
-                              () -> assertEquals("Moumadi", pers.getLastName()));
+		assertAll("personne", () -> assertEquals("Nassur", pers.getFirstName()),
+				() -> assertEquals("Moumadi", pers.getLastName()));
 
+	}
 }
